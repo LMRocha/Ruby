@@ -12,25 +12,25 @@ qa:
         default:
             database: nblog-qa
             hosts:
-                - 'ds149551.mlab.com:49551'
+                - 'ds139994.mlab.com:39994'
             options:
-                user: qa-app
+                user: test
                 password: qa#123
-uat:
-    clients:
-        default:
-            database: nblog-uat
-            hosts:
-                - 'ds125623.mlab.com:25623'
-            options:
-                user: uat-app
-                password: uat#123
-production:
-    clients:
-        default:
-            database: nblog-prod
-            hosts:
-                - 'ds149551.mlab.com:49551'
-            options:
-                user: prod-app
-                password: prod#123
+# uat:
+#     clients:
+#         default:
+#             database: nblog-uat
+#             hosts:
+#                 - 'ds125623.mlab.com:25623'
+#             options:
+#                 user: uat-app
+#                 password: uat#123
+# production:
+#     clients:
+#         default:
+#             database: nblog-prod
+#             hosts:
+#                 - 'ds149551.mlab.com:49551'
+#             options:
+#                 user: prod-app
+#                 password: prod#123
