@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" errors="0" skipped="0" tests="1" time="1.312586" name="Publicar artigo">
-<testcase classname="Publicar artigo" name="Publicar novo artigo no blog" time="1.312586">
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="30.662514" name="Publicar artigo">
+<testcase classname="Publicar artigo" name="Publicar novo artigo no blog" time="30.662514">
+  <failure message="failed Publicar novo artigo no blog" type="failed">
+    <![CDATA[Cenario: Publicar novo artigo no blog
+
+Example row: 
+
+Message:
+]]>
+    <![CDATA[
+expected: 200
+     got: 503
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/posts_steps.rb:16:in `/^o código de resposta deve ser "([^"]*)"$/'
+features/specs/publicar_artigo.feature:14:in `Então o código de resposta deve ser "200"']]>
+  </failure>
   <system-out>
     <![CDATA[]]>
   </system-out>

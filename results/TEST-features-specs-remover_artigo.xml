@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" errors="0" skipped="0" tests="1" time="1.984996" name="Remover artigo">
-<testcase classname="Remover artigo" name="Remover artigo do blog" time="1.984996">
+<testsuite failures="1" errors="0" skipped="0" tests="1" time="31.340343" name="Remover artigo">
+<testcase classname="Remover artigo" name="Remover artigo do blog" time="31.340343">
+  <failure message="failed Remover artigo do blog" type="failed">
+    <![CDATA[Cenario: Remover artigo do blog
+
+Example row: 
+
+Message:
+]]>
+    <![CDATA[
+expected: 200
+     got: 404
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/posts_steps.rb:16:in `/^o código de resposta deve ser "([^"]*)"$/'
+features/specs/remover_artigo.feature:14:in `Então o código de resposta deve ser "200"']]>
+  </failure>
   <system-out>
     <![CDATA[]]>
   </system-out>

@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite failures="0" errors="0" skipped="0" tests="2" time="11.571542" name="Atualizar artigo">
-<testcase classname="Atualizar artigo" name="Atualizar artigo do blog" time="10.893172">
+<testsuite failures="2" errors="0" skipped="0" tests="2" time="32.619935" name="Atualizar artigo">
+<testcase classname="Atualizar artigo" name="Atualizar artigo do blog" time="31.923344">
+  <failure message="failed Atualizar artigo do blog" type="failed">
+    <![CDATA[Cenario: Atualizar artigo do blog
+
+Example row: 
+
+Message:
+]]>
+    <![CDATA[
+expected: 200
+     got: 404
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/posts_steps.rb:16:in `/^o código de resposta deve ser "([^"]*)"$/'
+features/specs/atualizar_artigo.feature:14:in `Então o código de resposta deve ser "200"']]>
+  </failure>
   <system-out>
     <![CDATA[]]>
   </system-out>
@@ -8,7 +24,23 @@
     <![CDATA[]]>
   </system-err>
 </testcase>
-<testcase classname="Atualizar artigo" name="Artigo não existe" time="0.678369">
+<testcase classname="Atualizar artigo" name="Artigo não existe" time="0.696591">
+  <failure message="failed Artigo não existe" type="failed">
+    <![CDATA[Cenario: Artigo não existe
+
+Example row: 
+
+Message:
+]]>
+    <![CDATA[
+expected: 404
+     got: 500
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/posts_steps.rb:16:in `/^o código de resposta deve ser "([^"]*)"$/'
+features/specs/atualizar_artigo.feature:21:in `Então o código de resposta deve ser "404"']]>
+  </failure>
   <system-out>
     <![CDATA[]]>
   </system-out>
